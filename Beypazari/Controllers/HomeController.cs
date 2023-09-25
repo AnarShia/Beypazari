@@ -18,7 +18,7 @@ namespace Beypazari.Controllers
         {
             Soyad soyad = new Soyad();
             var surname = soyad.Soyadım();
-            return View(surname);
+            return View(model:surname);
         }
 
         public IActionResult Privacy()
