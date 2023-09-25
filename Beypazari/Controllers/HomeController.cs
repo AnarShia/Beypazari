@@ -1,6 +1,7 @@
 ﻿using Beypazari.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using AdanaSuck;
 
 namespace Beypazari.Controllers
 {
@@ -15,7 +16,9 @@ namespace Beypazari.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            Soyad soyad = new Soyad();
+            var surname = soyad.Soyadım();
+            return View(surname);
         }
 
         public IActionResult Privacy()
@@ -28,5 +31,7 @@ namespace Beypazari.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
+  
     }
 }

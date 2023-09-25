@@ -6,4 +6,33 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="3.0.37" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="3.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="FuncFile\bin\output\bin\extensions.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\bin\output\bin\function.deps.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\bin\output\FuncFile.deps.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\bin\output\host.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\bin\output\local.settings.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\bin\output\TestFunc\function.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\host.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\local.settings.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\obj\Debug\net6.0\FuncFile.sourcelink.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\obj\FuncFile.csproj.nuget.dgspec.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\obj\project.assets.json" />
+    <_ContentIncludedByDefault Remove="FuncFile\Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdanaSuck\AdanaSuck.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdanaSuck\AdanaSuck.csproj" />
+  </ItemGroup>
+
 </Project>
